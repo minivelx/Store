@@ -1,0 +1,6 @@
+<h3>{{ producto.nombre}}</h3>
+<img [src]="producto.imagen" alt="producto.nombre" a>
+<strong>{{ producto.precio }}</strong>
+<button (click)="addCart()">Add Cart</button>
+<button (click)="deleteProduct()">Eliminar</button>
+<a [routerLink]="['/products', producto.id]">Ver detalle</a>

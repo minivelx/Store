@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)]="title" />
+{{ title }}
+<button (click)="AgregarItem(title)">Add item</button>
+<ul>
+    <li *ngFor="let item of items; index as i">
+        {{item}} <button (click)="BorrarItem(i)">Borrar</button>
+    </li>
+</ul>
